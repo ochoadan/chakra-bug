@@ -2,21 +2,22 @@ import { Stack, Button } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const Index = () => {
-  const [status, setStatus] = useState<number>(0.3);
+  const [loading, setLoading] = useState<boolean>(true);
 
+  // issue combination
   useEffect(() => {
-    setStatus(0.6);
+    setLoading(false);
   }, []);
 
-  if (status < 0.5) {
+  if (loading) {
     return <div>loading</div>;
   }
 
   return (
     <Stack
+      // issue combination when using mixed breakpoints from different props
       direction={{ base: "column", sm: "row" }}
       mb={{ base: 4, md: 8 }}
-      spacing={4}
     >
       <Button colorScheme={"blue"}>Get started</Button>
       <Button>Learn more</Button>
