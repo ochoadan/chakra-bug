@@ -1,16 +1,5 @@
-Hello there, this is a repo to showcase the problem on lack of compatibility between Chakra-UI and NextAuth.
-
-The issue: "sm" breakpoint value stops working on "build" but works fine on "dev"
-
-## What causes the issue: 
-
-useSession loads session data or status is used on a project.
-
-Middleware also seems to trigger this on certain occassions.
-
-To be honest i couldn't pinpoint the root of the issue, but i hope this is a good example.
-
-## To recreate the issue
+## Changes
+Hello there, this is a repo to showcase a small bug with Chakra-UI.
 
 First install the dependencies:
 
@@ -27,10 +16,6 @@ Build and run the project:
 
 ## Preview
 ![img](https://github.com/ochoadan/chakra-nextauth-compaiblity/blob/main/image.jpg?raw=true)
-
-
-### PS
-This is a test kit project so the .env values will remain.
 
 <!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
